@@ -1,0 +1,1 @@
+document.getElementById('E_Button').addEventListener('click', function(){navigator.clipboard.writeText("mateogg2004@gmail.com").then(() => {alert("Copied");})});

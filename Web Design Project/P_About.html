@@ -5,16 +5,22 @@
 		<meta content="width=device-width, initial-scale=1.0" name="viewport">
 		<link href="https://fonts.googleapis.com/css?family=Inter:400,400i,700,900|Work+Sans:400,700,900|PT+Mono" rel="stylesheet">
 		<style></style>
-		<link rel="shortcut icon" type="image/x-icon" href="https://images.rbxcdn.com/905bd722ee0a6ceda3caacde54c0b081.png">
+		<link rel="shortcut icon" type="image/x-icon" href="https://img.itch.zone/aW1nLzE2NDAzNDQ3LnBuZw==/35x35%23/LTQtWy.png">
 		<title>Mateo Garcia Gallego Portfolio - Programmer - Home</title>
 		<link href="P_styles1.css" rel="stylesheet" />
+		<link href="P_timelines.css" rel="stylesheet" />
+		<link href="P_About.css" rel="stylesheet" />
+		<script src="https://static.itch.io/api.js"></script>
+		<script src="P_Downloads.js" defer></script>
+		<script src="P_Buttons.js" defer></script>
 	</head>
 	<body class="theme-insta album" style="background-color:#2B211B">
+		<div id="progress"></div>
 		<div id="top"></div>
 		<header class="site-header">
 			<div class="site-logo">
 				<div class="site-title title-font">
-					<a href="/">Mateo Garcia Gallego</a>
+					<a href="P_Home.html">Mateo Garcia Gallego</a>
 					<div class="site-subtitle visible-desktop">Programmer</div>
 				</div>
 			</div>
@@ -26,102 +32,154 @@
 			<div class="header-nav-close">
 				<div class="header-nav-close-inner"></div>
 			</div>
-			<div class="header-nav">
-				<ul class="nav">
-				 <li><a href="P_Home.html">Home</a></li>
-				 <li><a href="P_About.html">About Me</a></li>
-				 <li><a href="P_Contact.html">Contact Me</a></li>
-				 <li><a href="P_Portfolio.html">Portfolio</a></li>
+			<nav class="horizontal">
+				<ul class="mainmenu">
+				 <li><a class="horizontal_a" href="P_Home.html">Home</a></li>
+				 <li><a class="horizontal_a" id="n_Selected" href="P_About.html">About Me</a></li>
+				 <li><a class="horizontal_a" href="P_Contact.html">Contact Me</a></li>
+				 <li><a class="horizontal_a" href="P_Portfolio.html">Portfolio</a></li>
 				</ul>
-			</div>
+			</nav>
 		</header>
 		<div class="site-wrapper">
-			<div class="nav-album hidden-phone">
-				<ul class="nav-inline">
-				 <li class="active"><a href="/albums/15165371">Web</a></li>
-				 <li><a href="/albums/13068495">Downloadable</a></li>
-				 <li><a href="/albums/3581441">Music</a></li>
-				 <li><a href="/albums/3581442">Illustration</a></li>
-				 <li><a href="/albums/14245149">School Projects</a></li>
-				 <li><a href="/projects">All</a></li>
-				</ul>
-			</div>
 			<div class="site-content">
+				<br></br>
+				<div class="pfp">
+					<img class="round" width="240" height="240" src="https://img.itch.zone/aW1nLzE2NDAzNDQ3LnBuZw==/35x35%23/LTQtWy.png">
+					<h1>Mateo Garcia Gallego</h1>
+					<h4>Programmer</h4>
+					<button class="email" id="E_Button">
+					<ion-icon name="mail-outline"></ion-icon>
+					mateogg2004@gmail.com
+					</button>
+				</div>
 				<div class="album-insta-wrap index">
 					<div class="album-insta">
-						<a class="album-insta-item" href="/projects/DL01Ky?album_id=15165371">
-							<div class="album-insta-inner">
-								<img class="img-responsive" width="400" height="400" alt="" src="">
-								<div class="album-insta-overlay">
-									<div class="album-insta-project">Project 1</div>
-								</div>
-							</div>
-						</a>
-						<a class="album-insta-item" href="/projects/x31PEX?album_id=15165371">
-							<div class="album-insta-inner">
-								<img class="img-responsive" width="400" height="400" src="">
-								<div class="album-insta-overlay">
-									<div class="album-insta-project">Project 2</div>
-								</div>
-							</div>
-						</a>
-						<a class="album-insta-item" href="/projects/qJyNXe?album_id=15165371">
-							<div class="album-insta-inner">
-								<img class="img-responsive" width="400" height="400" src="">
-								<div class="album-insta-overlay">
-									<div class="album-insta-project">Project 3</div>
-								</div>
-							</div>
-						</a>
-						<a class="album-insta-item" href="/projects/XJ5W4R?album_id=15165371">
-							<div class="album-insta-inner">
-								<img class="img-responsive" width="400" height="400" src="">
-								<div class="album-insta-overlay">
-									<div class="album-insta-project">Project 4</div>
-								</div>
-							</div>
-						</a>
-						<a class="album-insta-item" href="/projects/YGdgrY?album_id=15165371">
-							<div class="album-insta-inner">
-								<img class="img-responsive" width="400" height="400" src="">
-								<div class="album-insta-overlay">
-									<div class="album-insta-project">Project 5</div>
-								</div>
-							</div>
-						</a>
-						<a class="album-insta-item" href="/projects/nJLzZr?album_id=15165371">
-							<div class="album-insta-inner">
-								<img class="img-responsive" width="400" height="400" src="">
-								<div class="album-insta-overlay">
-									<div class="album-insta-project">Project 6</div>
-								</div>
-							</div>
-						</a>
-						<a class="album-insta-item" href="/projects/blLzvo?album_id=15165371">
-							<div class="album-insta-inner">
-							<img class="img-responsive" width="400" height="400" src="">
-								<div class="album-insta-overlay">
-									<div class="album-insta-project">Project 7</div>
-								</div>
-							</div>
-						</a>
-						<a class="album-insta-item" href="/projects/ELRl0K?album_id=15165371">
-							<div class="album-insta-inner">
-								<img class="img-responsive" width="400" height="400" src="">
-								<div class="album-insta-overlay">
-									<div class="album-insta-project">Project 8</div>
-									<div class="col-12 col-tablet-3 btt">
-										<a class="scrolltoel" href="#top">
-											<span class="far fa-long-arrow-up icon-pad-right-2x"></span>Back to top 
-										</a>
+						<div class="Project">
+							<a class="album-insta-item" href="/projects/DL01Ky?album_id=15165371">
+								<div class="album-insta-inner">
+									<img class="img-responsive" width="400" height="400" alt="" src="">
+									<div class="album-insta-overlay">
+										<div class="album-insta-project">Project 1</div>
 									</div>
-									<div class="col-12 col-tablet-3 site-footer-copy">© All rights reserved</div>
-									</footer>
 								</div>
+							</a>
+							<div class="hide-phone">
+								<h1>Hello!</h1>
 							</div>
+						</div>
+						<div class="Project">
+							<a class="album-insta-item" href="/projects/x31PEX?album_id=15165371">
+								<div class="album-insta-inner">
+									<img class="img-responsive" width="400" height="400" src="">
+									<div class="album-insta-overlay">
+										<div class="album-insta-project">Project 2</div>
+									</div>
+								</div>
+							</a>
+							<div class="hide-phone">
+								<h1>Hello!</h1>
+							</div>
+						</div>
+						<div class="Project">
+							<a class="album-insta-item" href="/projects/qJyNXe?album_id=15165371">
+								<div class="album-insta-inner">
+									<img class="img-responsive" width="400" height="400" src="">
+									<div class="album-insta-overlay">
+										<div class="album-insta-project">Project 3</div>
+									</div>
+								</div>
+							</a>
+							<div class="hide-phone">
+								<h1>Hello!</h1>
+							</div>
+						</div>
+						<div class="Project">
+							<a class="album-insta-item" href="/projects/XJ5W4R?album_id=15165371">
+								<div class="album-insta-inner">
+									<img class="img-responsive" width="400" height="400" src="">
+									<div class="album-insta-overlay">
+										<div class="album-insta-project">Project 4</div>
+									</div>
+								</div>
+							</a>
+							<div class="hide-phone">
+								<h1>Hello!</h1>
+							</div>
+						</div>
+						<div class="Project">
+							<a class="album-insta-item" href="/projects/YGdgrY?album_id=15165371">
+								<div class="album-insta-inner">
+									<img class="img-responsive" width="400" height="400" src="">
+									<div class="album-insta-overlay">
+										<div class="album-insta-project">Project 5</div>
+									</div>
+								</div>
+							</a>
+							<div class="hide-phone">
+								<h1>Hello!</h1>
+							</div>
+						</div>
+						<div class="Project">
+							<a class="album-insta-item" href="/projects/nJLzZr?album_id=15165371">
+								<div class="album-insta-inner">
+									<img class="img-responsive" width="400" height="400" src="">
+									<div class="album-insta-overlay">
+										<div class="album-insta-project">Project 6</div>
+									</div>
+								</div>
+							</a>
+							<div class="hide-phone">
+								<h1>Hello!</h1>
+							</div>
+						</div>
+						<div class="Project">
+							<a class="album-insta-item" href="/projects/blLzvo?album_id=15165371">
+								<div class="album-insta-inner">
+								<img class="img-responsive" width="400" height="400" src="">
+									<div class="album-insta-overlay">
+										<div class="album-insta-project">Project 7</div>
+									</div>
+								</div>
+							</a>
+							<div class="hide-phone">
+								<h1>Hello!</h1>
+							</div>
+						</div>
+						<div class="Project">
+							<a class="album-insta-item" href="/projects/ELRl0K?album_id=15165371">
+								<div class="album-insta-inner">
+									<img class="img-responsive" width="400" height="400" src="">
+									<div class="album-insta-overlay">
+										<div class="album-insta-project">Project 8</div>
+										<div class="col-12 col-tablet-3 btt">
+										</div>
+									</div>
+								</div>
+							</a>
+							<div class="hide-phone">
+								<h1>Hello!</h1>
+								<br>
+								this is a test to showcase how much text I could put inside here without the text going out of the box
+								<br></br>
+								<br></br>
+								<button class="Downloadable" id="finijumper_game">Download</a>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+		<br></br>
+		<br></br>
+		<div class="footer_page">
+			<footer>
+				<div>&copy; All Rights Reserved.</div>
+				<div><a class="scrolltoel" href="#top"> <span class="right_top"></span>Back to top </a></div>
+			</footer>
+			
+		</div>
+		<script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
+		<script nomodule src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"></script>
 	</body>
 </html>
