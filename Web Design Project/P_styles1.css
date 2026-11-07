@@ -1,0 +1,430 @@
+@charset "utf-8";
+
+/*
+   
+   Author:   Mateo Garcia Gallego
+   Date:     11/27/2026
+   
+   Filename: P_styles1.css
+   
+   This file contains the layout styles used in the pages of the Portfolio.
+
+*/
+
+/* ===========
+   Base Styles
+   ===========
+*/
+
+
+/* HTML and Body Styles */
+
+html {
+	
+   background-color: #2B211B;
+   height: 100%;
+   font-family: Verdana, Geneva, sans-serif;
+   font-size: 12px;
+}
+
+body {
+   background: #ffffff;   
+   margin: 0px auto;
+   min-height: 100%;
+   min-width: 320px;
+   max-width: 1024px;
+   width: 100%;
+}
+
+/* Title Styles */
+
+.site-title {
+	padding: 4% 0px;
+	text-align: center;
+	font-size: 2.25rem;
+}
+
+.site-title a {
+	text-decoration: none;
+	transition: all 0.25s;
+	color: #ffffff;
+}
+
+.site-title a:hover {
+	color: #000000;
+}
+
+/* Body Header Styles */
+
+body header {
+   background: rgb(134,176,232);   
+}
+
+body header img {
+   display: block;
+   width: 100%;
+}
+
+/* Horizonal Navigation Styles */
+
+nav.horizontal {
+   min-height: 2em;
+   
+}
+
+nav.horizontal li {
+   display: block;
+   line-height: 2em;
+}
+
+a.horizontal_a {
+	color: rgb(35,23,55);
+   display: block;
+   font-size: 1.5em;
+   text-align: center;
+   padding: 15px 25px;
+   text-decoration: none;
+   transition: all 0.2s;
+   text-transform: uppercase;
+}
+a#n_Selected:visited{
+	color: white;
+	border-bottom: 0.3rem solid green;
+
+}
+a#n_Selected:link{
+	color: white;
+	border-bottom: 0.3rem solid green;
+
+}
+
+nav.horizontal a:hover, nav.horizontal a:active {
+   color: white;
+}
+
+a.n_Selected:hover{
+	color: white;
+	border-bottom: 0.3rem solid green;
+}
+
+a.n_Selected:active{
+	color: white;
+	border-bottom: 0.3rem solid green;
+}
+
+.nav-album{
+	display:block;
+	white-space: nowrap;
+	text-align: center;
+}
+
+.nav-inline{
+	list-style:none;
+	width:100%;
+	padding: 3% 10%;
+	gap: 7%;
+	text-align: center;
+	display:flex;
+	white-space: nowrap;
+}
+
+.nav-inline a{
+	color: white;
+	text-decoration: none;
+	border: 0.0625rem solid #ffffff;
+	padding: 0.3rem 1.5625rem;
+	border-radius: 0.975rem;
+	transition: all 0.2s;
+}
+a.Selected {
+	border: 0.2rem solid green;
+}
+.nav-inline a:hover{
+	color: green;
+	border: 0.0625rem solid green;
+}
+a.Selected:hover {
+	color: green;
+	border: 0.2rem solid green;
+}
+/* Main Menu Styles */
+
+ul.mainmenu {
+   display: block;
+   white-space: nowrap;
+
+}
+
+ul.mainmenu > li {
+
+}
+
+/* Submenu Styles */
+
+ul.submenu {
+   width: 100%;
+   background-color: rgb(56, 155, 60)
+}
+
+
+/* Project Styles */
+
+.Project {
+	display: flex;
+}
+
+.hide-phone {
+	padding: 0px 4%;
+}
+
+.Downloadable {
+	cursor: pointer;
+	font-size: 2rem;
+	color: white;
+	background-color: green;
+	border: 0.0625rem solid #ffffff;
+	padding: 0.3rem 1.5625rem;
+	border-radius: 0.975rem;
+	text-decoration:none;
+	transition: all 0.2s;
+}
+
+.Downloadable:hover{
+	background-color: blue;
+}
+
+/* Section Styles */
+
+section {
+   clear: both;
+}
+
+section::after {
+   content: "";
+   display: table;
+   clear: both;
+}
+
+section img {
+   display: block;
+   width: 100%;
+}
+
+section p {
+   line-height: 1.4em;
+   padding: 10px;
+   font-size: 1.2em;
+}
+
+/* Article Styles */
+
+article img {
+	width: 109.1%;
+	height: 100%;
+	object-fit: cover;
+	
+}
+
+/* Aside Styles */
+
+aside {
+   display: block;
+   background-color: rgb(116, 215, 120);
+   font-weight: bold;
+   margin-bottom: 10%;
+}
+
+aside:first-of-type {
+	   margin-bottom: 10%;
+	   margin-top: 15%;
+	
+}
+
+/* Footer Styles */
+/* Footer */
+
+footer {
+   background-color: #333;
+   display:flex;
+   color: white;
+   white-space: nowrap;
+   font-size: 0.9em;
+   padding: 3% 0px;
+   justify-content: center;
+}
+
+.scrolltoel {
+	text-decoration:none;
+	color:white;
+	transition: all 0.2s;
+}
+
+.scrolltoel:hover {
+	color: gray;
+}
+
+/* Pulldown Menu Styles */
+
+ul.submenu {
+	display: none;
+}
+
+a.submenuTitle:hover+ul.submenu,ul.submenu:hover {
+	display: block;
+}
+
+/* New Styles Added Below */
+
+/* ==============================
+   Mobile Styles: 0px to 480px
+   ===============================
+*/
+@media only screen and (max-width: 480px) {
+	
+	/* Site Title */
+	
+	.site-title a {
+		font-size: 2.2rem;
+	}
+	
+	.visible-desktop{
+		display:none;
+	}
+	
+	.hidden-phone{
+		display:none;
+	}
+	
+	/* Image Styles */
+
+	img.img-responsive {
+		width:100%;
+		display: flex;
+	}
+	
+	/* Project styles */
+	
+	.Project {
+		width:100%;
+		display:block;
+	}
+	
+	.hide-phone {
+		display:none;
+	}
+	
+	/* footer styles */
+	
+	footer{
+		gap: 30%;
+	}
+	
+	nav.horizontal a {
+		font-size: 1.5em;
+		line-height: 2.2em;
+	}
+	
+	article img{
+		display:none;
+	}
+	
+	body {
+		background-image: url("er_homephoto1.jpg");
+		background-repeat: no-repeat;
+		background-size:cover;
+	}
+	
+	section{
+		background:transparent;
+		
+	}
+	
+}
+
+/* ================================
+   Tablet Styles: 481px and greater
+   ================================
+*/
+@media only screen and (min-width: 481px) {
+	
+	footer{
+		 gap: 50%;
+	}
+	
+	ul.mainmenu > li {
+		float: left;
+		width: 20%;
+		position: relative;
+	}
+	
+	ul.submenu{
+		width: 200%;
+		box-shadow: rgb(51, 51, 51) 5px 5px 15px;
+		position: absolute;
+		display:none;
+	}
+	
+}
+
+/* ================================
+   Tablet Styles: 769px and greater
+   ================================
+*/
+@media only screen and (min-width: 769px) {
+	
+	.site-title a {
+		font-size: 3rem;
+	}
+	
+	.site-title a:hover {
+		font-size: 3.02rem;
+	}
+	
+	.visible-desktop{
+		display:block;
+	}
+	
+	.hidden-phone{
+		display:flex;
+	}
+	
+	footer{
+		 gap: 72%;
+	}
+	
+	article {
+		float: left;
+		margin-right: 5%;
+		width: 55%;
+	}
+	
+	aside {
+		float: left;
+		width: 40%;
+	}
+	
+	ul.submenu {
+		background-color: rgb(56, 155, 60);
+		box-shadow: none;
+		display: none;
+		position: absolute;
+		width: 100%;
+		z-index: 9;
+	}
+	
+	nav.horizontal::after{
+		clear: both;
+		content: "";
+		display: table;
+	}
+	
+	nav.horizontal li:hover > ul.submenu {
+		display: block;
+	}	
+	
+	ul.mainmenu {
+			display: flex;
+			justify-content: center;
+		
+	}
+}
