@@ -36,3 +36,15 @@ section#bottompage{
 	column-gap: 0.3rem;
 	transition: all 0.2s;
 }
+
+.skills-list{
+	display: flex;
+}
+
+.skills-list h4{
+	border: 0.0625rem solid #ffffff;
+	padding: 0.5rem 1.5625rem;
+	margin: 0 0.5rem 0.625rem 0;
+	column-gap: 0.3rem;
+	border-radius: 1.25rem;
+}
