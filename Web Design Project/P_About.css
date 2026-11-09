@@ -37,6 +37,12 @@ section#bottompage{
 	transition: all 0.2s;
 }
 
+.resume-container a {
+	color: white;
+	text-decoration: none;
+	font-size: 1.5rem;
+}
+
 .skills-list{
 	display: flex;
 }
@@ -47,4 +53,19 @@ section#bottompage{
 	margin: 0 0.5rem 0.625rem 0;
 	column-gap: 0.3rem;
 	border-radius: 1.25rem;
+}
+
+.software-list{
+	display:flex;
+	
+}
+
+.software-item{
+	flex-basis:50%;
+	display:flex;
+	font-size: 1.6rem;
+	padding-top: 1.2rem;
+	align-items: center;
+	column-gap: 1rem;
+	margin: 0 0.5rem 0.625rem 0;
 }
