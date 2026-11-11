@@ -147,6 +147,12 @@ a.Selected:hover {
 	color: green;
 	border: 0.2rem solid green;
 }
+
+.round {
+	border-radius: 50%;
+	object-fit: cover;
+}
+
 /* Main Menu Styles */
 
 ul.mainmenu {

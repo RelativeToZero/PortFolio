@@ -12,13 +12,6 @@ section#bottompage{
 	text-align:center;
 }
 
-.round {
-	
-	
-	border-radius: 50%;
-	object-fit: cover;
-}
-
 .email {
 	display: flex;
     align-items: center;

@@ -3,6 +3,23 @@
    11/17/2025
  */
 
+/* Socials */
+
+.social-container{
+	display:block;
+	text-align: center;
+	justify-content: center;
+	align-items:center;
+	margin: 0 auto;
+}
+
+.social-list {
+	display:flex;
+    text-align: center;
+	justify-content: center;
+	align-items:center;
+}
+
 /* Contact Section */
 #contact {
 
