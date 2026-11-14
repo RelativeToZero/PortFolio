@@ -3,21 +3,24 @@
 	<head>
 		<meta charset="utf-8">
 		<meta content="width=device-width, initial-scale=1.0" name="viewport">
-		<link href="https://fonts.googleapis.com/css?family=Inter:400,400i,700,900|Work+Sans:400,700,900|PT+Mono" rel="stylesheet">
-		<style></style>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 		<link rel="shortcut icon" type="image/x-icon" href="https://img.itch.zone/aW1nLzE2NDAzNDQ3LnBuZw==/35x35%23/LTQtWy.png">
 		<title>Mateo Garcia Gallego Portfolio - Programmer - Home</title>
 		<link href="P_styles1.css" rel="stylesheet" />
 		<link href="P_timelines.css" rel="stylesheet" />
+		<link href="P_Projects.css" rel="stylesheet" />
 		<script src="https://static.itch.io/api.js"></script>
 		<script src="P_Downloads.js" defer></script>
+		<script src="P_Buttons.js" defer></script>
 	</head>
 	<body class="theme-insta album" style="background-color:#2B211B">
 		<div id="progress"></div>
 		<div id="top"></div>
 		<header class="site-header">
 			<div class="site-logo">
-				<div class="site-title title-font">
+				<div class="site-title montserrat-title">
 					<a href="P_Home.html">Mateo Garcia Gallego</a>
 					<div class="site-subtitle visible-desktop">Programmer</div>
 				</div>
@@ -55,11 +58,29 @@
 				<div class="album-insta-wrap index">
 					<div class="album-insta">
 						<div class="Project">
-							<a class="album-insta-item" target="_blank" href="https://itch.io/embed-upload/18680484?color=656565">
-								<div class="album-insta-inner">
-									<img class="img-responsive" width="400" height="400" src="https://img.itch.zone/aW1nLzI5MzI3NTA5LmdpZg==/original/lSZdUJ.gif" alt="Metal Mesh Image">
-								</div>
-							</a>
+							<div class="carousel hidden-phone" data-carousel>
+								<button class="carousel-button prev" data-carousel-button="prev"><</button>
+								<button class="carousel-button next" data-carousel-button="next">></button>
+								<ul data-slides>
+									<li class="slide" data-active>
+										<a class="album-insta-item" target="_blank" href="https://itch.io/embed-upload/18680484?color=656565"><img class="img-responsive" width="400" height="400" src="https://img.itch.zone/aW1nLzI5MzI3NTA5LmdpZg==/315x250%23c/eR8QsA.gif" alt="Metal Mesh Image"></a>
+									</li>
+									<li class="slide">
+										<video controls width="400" height="400">
+											<source src="https://www.youtube.com/4d0f890a-c356-4aed-8bd8-7b3d31cc414e" type="video/mp4">
+											Your browser does not support video.
+										</video>
+									</li>
+								</ul>
+							</div>
+							<div class="hidden-desk">
+									<br></br>
+									<a class="album-insta-item" target="_blank" href="https://itch.io/embed-upload/11920274?color=6f6f6f">
+										<div class="album-insta-inner">
+											<img class="img-responsive" width="400" height="400" src="https://img.itch.zone/aW1nLzE4NDc5MDg1LmdpZg==/original/%2FiXwcC.gif" alt="Coin Collecting Game Image">
+										</div>
+									</a>
+							</div>
 							<div class="hide-phone">
 								<h1>Metal Mesh</h1>
 								<br>

@@ -88,7 +88,7 @@ nav.horizontal li {
 }
 
 a.horizontal_a {
-	color: rgb(35,23,55);
+	color: black;
    display: block;
    font-size: 1.5em;
    text-align: center;
@@ -168,7 +168,7 @@ a.Selected:hover {
 ul.mainmenu {
    display: block;
    white-space: nowrap;
-
+   padding: 0;
 }
 
 ul.mainmenu > li {
@@ -316,6 +316,15 @@ a.submenuTitle:hover+ul.submenu,ul.submenu:hover {
 */
 @media only screen and (max-width: 480px) {
 	
+	.site-title{
+		border-bottom: 0.1rem solid white;
+	}
+	
+	.horizontal{
+		align-items:center;
+		margin: 0 auto;
+	}
+	
 	/* Site Title */
 	
 	.site-title a {
@@ -374,6 +383,10 @@ a.submenuTitle:hover+ul.submenu,ul.submenu:hover {
 		
 	}
 	
+	.hidden-desk{
+		display:block;
+	}
+	
 }
 
 /* ================================
@@ -381,6 +394,15 @@ a.submenuTitle:hover+ul.submenu,ul.submenu:hover {
    ================================
 */
 @media only screen and (min-width: 481px) {
+	.horizontal{
+		align-items:center;
+		margin: 0 auto;
+	}
+	
+	
+	.hidden-desk{
+		display:block;
+	}
 	
 	footer{
 		 gap: 50%;
@@ -406,6 +428,10 @@ a.submenuTitle:hover+ul.submenu,ul.submenu:hover {
    ================================
 */
 @media only screen and (min-width: 769px) {
+	
+	.hidden-desk{
+		display:none;
+	}
 	
 	.site-title a {
 		font-size: 3rem;
