@@ -7,5 +7,6 @@ function sendEmail() {
 	
 	emailjs
 		.send("service_he9ftgd","template_slazm9n", templateParams)
-		.then(() => alert("Email sent!").catch(() => alert("ERROR: Email not sent")));
+		.then(() => alert("Email sent!"))
+		.catch(() => alert("ERROR: Email not sent"));
 }

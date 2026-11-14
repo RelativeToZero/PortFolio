@@ -34,19 +34,30 @@ section#bottompage{
 	color: white;
 	text-decoration: none;
 	font-size: 1.5rem;
+	transition: all 0.2s;
 }
 
-.skills-list{
-	display: flex;
+.resume-container a:hover{
+	color: green;
 }
 
-.skills-list h4{
-	border: 0.0625rem solid #ffffff;
-	padding: 0.5rem 1.5625rem;
-	margin: 0 0.5rem 0.625rem 0;
-	column-gap: 0.3rem;
-	border-radius: 1.25rem;
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 0.3rem;
 }
+
+.skills-list li {
+    border: 0.0625rem solid #ffffff;
+    padding: 0.5rem 1.5625rem;
+    margin: 0 0 0.625rem 0;
+    border-radius: 1.25rem;
+}
+
 
 .software-list{
 	display:flex;

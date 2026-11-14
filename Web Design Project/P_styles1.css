@@ -17,6 +17,16 @@
 */
 
 
+/* Fonts */
+
+
+.montserrat-title {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
 /* HTML and Body Styles */
 
 html {
@@ -57,7 +67,7 @@ body {
 /* Body Header Styles */
 
 body header {
-   background: rgb(134,176,232);   
+	
 }
 
 body header img {
@@ -176,11 +186,30 @@ ul.submenu {
 /* Project Styles */
 
 .Project {
+	color: white;
 	display: flex;
+	padding-bottom: 1rem;
+	margin-bottom: 1rem;
 }
 
 .hide-phone {
 	padding: 0px 4%;
+}
+
+.Web {
+	cursor: pointer;
+	font-size: 2rem;
+	color: white;
+	background-color: blue;
+	border: 0.0625rem solid #ffffff;
+	padding: 0.3rem 1.5625rem;
+	border-radius: 0.975rem;
+	text-decoration:none;
+	transition: all 0.2s;
+}
+
+.Web:hover{
+	background-color:red;
 }
 
 .Downloadable {
